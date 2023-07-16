@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>My Library</title>
+</head>
+<body>
+  <button type="button" id="addBookBtn" onclick="toggle()">Add Book</button>
+
+  <div id="overlay" class="grid">
+    <div class="bookDetailForm grid">
+      <form class="grid" action="#">
+        <span class="closeDetailForm grid" onclick="toggle()">&times;</span>
+        <label for="bookTitle" id="bookTitle">BOOK TITLE</label>
+        <input type="text" id="bookTitle" placeholder="Warlock of Magus World">
+        <label for="authorName" id="authorName">AUTHOR NAME</label>
+        <input type="text" id="authorName" placeholder="Sicilyn">
+        <label for="totalPages" id="totalPages">TOTAL PAGES</label>
+        <input type="text" id="totalPages" placeholder="1154">
+        <button type="submit" id="submitBook">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
